@@ -1,3 +1,8 @@
+div {
+  border: 1px solid red;
+}
+
+
 /* universal styles */
 html {
   font-size: 18px;
@@ -6,18 +11,25 @@ html {
 
 h1 {
   font-size: 2rem;
-  font-style: bold;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.7rem;
   padding-bottom: 24px;
 }
 
 h3 {
   font-size: 1.5rem;
-  padding-bottom: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 p {
-  padding-bottom: 15px;
+  padding: 8px 0px;
 }
+
 
 /* header */
 header nav {
@@ -64,7 +76,7 @@ ul li {
   display: flex;
 }
 
-.flex.container {
+.flex-container {
   display: flex;
   align-items: center;
   padding-top: 64px;
@@ -74,41 +86,43 @@ ul li {
 .banner {
   display: flex;
   align-items: center;
-  width: 60%;
 }
 
 .image.big {
   padding: 32px 24px;
 }
 
-.banner.text {
+.banner-text {
+  width: 40%;
 }
 
 .btn {
 color: white;
 background-color: black;
 text-align: center;
-padding: 8px;
+padding: 8px 0px;
 }
 
-.container {
+
+
+.first-container {
   display: flex;
 }
 
-.left {
-  max-width: 60%;
+.left-container{
+  width: 60%;
 }
 
-.right {
+.right-container {
   width: 40%;
 }
 
-.right.text {
+.inside {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
-.right div{
-  display: flex;
+.inside img {
+  width: 35%;
+  margin: 16px 16px;
 }
