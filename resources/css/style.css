@@ -1,8 +1,3 @@
-div {
-  border: 1px solid red;
-}
-
-
 /* universal styles */
 html {
   font-size: 18px;
@@ -22,8 +17,14 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
   font-weight: bold;
+}
+
+h6 {
+  font-size: .8rem;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 p {
@@ -88,7 +89,7 @@ ul li {
   align-items: center;
 }
 
-.image.big {
+.big {
   padding: 32px 24px;
 }
 
@@ -104,17 +105,29 @@ padding: 8px 0px;
 }
 
 
-
+/* main content */
 .first-container {
   display: flex;
 }
 
 .left-container{
-  width: 60%;
+  max-width: 60%;
+  flex-shrink: 3;
+}
+
+.left-container p,
+.left-container h1,
+.left-container h6 {
+  padding-left: 24px;
 }
 
 .right-container {
   width: 40%;
+}
+
+.right-container.upper {
+  padding-top: 16px;
+
 }
 
 .inside {
@@ -124,5 +137,76 @@ padding: 8px 0px;
 
 .inside img {
   width: 35%;
+  height: auto;
   margin: 16px 16px;
+
+}
+
+/* learning */
+.learning {
+  background-color: grey;
+}
+
+.learning h1 {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.learning-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 72px 32px 72px;
+}
+
+.items {
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+  max-width: 532px;
+  background-color: white;
+}
+
+.items img {
+  height: auto;
+}
+
+.items h3 {
+  padding: 16px 0 8px 16px;
+}
+
+.items p {
+  margin-left: 16px;
+}
+
+/* thesis */
+.thesis h1 {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.left-container h1 {
+  text-align: left;
+  padding-top: 24px;
+}
+
+.video {
+  max-width: 95%;
+  padding: 0 24px 0 24px;
+}
+
+.before-footer {
+  margin-bottom: 32px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span {
+  padding: 16px 10px 32px 24px;
 }
